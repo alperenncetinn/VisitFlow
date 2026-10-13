@@ -14,8 +14,9 @@ KVKK onayı · atlanamaz İSG eğitimi · QR geçiş · değiştirilemez denetim
 ![SSO](https://img.shields.io/badge/SSO-Entra%20ID%20%7C%20OIDC%20%7C%20SAML%202.0-0b5ed7)
 ![KVKK](https://img.shields.io/badge/KVKK-uyumlu-14b8c6)
 ![License](https://img.shields.io/badge/lisans-Noncommercial-0a1631)
+![Docker](https://img.shields.io/badge/Docker-ghcr.io%2Falperenncetinn%2Fvisitflow-2496ED?logo=docker&logoColor=white)
 
-[Özellikler](#-özellikler) · [Ekranlar](#-ekranlar) · [Hızlı başlangıç](#-hızlı-başlangıç) · [SSO](#-kurumsal-sso) · [Güvenlik](#-güvenlik-tasarımı) · [Lisans](#-lisans)
+[Özellikler](#-özellikler) · [Ekranlar](#-ekranlar) · [Kurulum](#-hızlı-başlangıç) · [SSO](#-kurumsal-sso) · [Güvenlik](#-güvenlik-tasarımı) · [Lisans](#-lisans)
 
 </div>
 
@@ -60,28 +61,50 @@ Tablet öncelikli, **canlı** (SignalR) "Gelecekler / İçeride / Çıkış yapa
 </tr>
 </table>
 
-**Ayrıca:** ilk kurulum sihirbazı · kullanıcı/rol yönetimi · **panelden SSO ve SMTP yönetimi** (yeniden başlatma gerektirmez) · SSO ile gelen kullanıcılar için **otomatik / yönetici onaylı / yalnızca davetli** giriş politikası · KVKK metin sürümleri · kurumsal tema · hash zincirli denetim izi · saklama süresi dolan kişisel verilerin otomatik anonimleştirilmesi.
+**Ayrıca:** ilk kurulum sihirbazı · kullanıcı/rol yönetimi · birim ve lokasyon yönetimi · **panelden SSO ve SMTP yönetimi** (yeniden başlatma gerektirmez) · SSO ile gelen kullanıcılar için **otomatik / yönetici onaylı / yalnızca davetli** giriş politikası · KVKK metin sürümleri · kurumsal tema · hash zincirli denetim izi · saklama süresi dolan kişisel verilerin otomatik anonimleştirilmesi.
 
 ## 🖼 Ekranlar
 
+### Çalışan portalı ve güvenlik
+
 <table>
 <tr>
-<td width="50%"><img src="docs/screenshots/login.png" alt="Giriş" /><p align="center"><sub><b>Giriş</b></sub></p></td>
-<td width="50%"><img src="docs/screenshots/visits.png" alt="Ziyaretler" /><p align="center"><sub><b>Çalışan portalı – ziyaretler</b></sub></p></td>
+<td width="50%"><img src="docs/screenshots/panel/ziyaretler.png" alt="Tüm ziyaretler" /><p align="center"><sub><b>Ziyaretler</b> – bugün beklenen, ön kayıt bekleyen, onaylı ve içerideki ziyaretçiler</sub></p></td>
+<td width="50%"><img src="docs/screenshots/panel/yeni-davet.png" alt="Yeni ziyaret daveti" /><p align="center"><sub><b>Yeni davet</b> – ziyaretçi bilgileri, birim/lokasyon ve tahmini varış</sub></p></td>
 </tr>
 <tr>
-<td><img src="docs/screenshots/guard.png" alt="Güvenlik paneli" /><p align="center"><sub><b>Güvenlik paneli – canlı pano</b></sub></p></td>
-<td><img src="docs/screenshots/details.png" alt="Ziyaret detayı" /><p align="center"><sub><b>Ziyaret detayı ve süreç</b></sub></p></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/sso.png" alt="Kimlik doğrulama ve SSO" /><p align="center"><sub><b>Yönetim – SSO ve giriş politikası</b></sub></p></td>
-<td><img src="docs/screenshots/email.png" alt="E-posta ayarları" /><p align="center"><sub><b>Yönetim – SMTP ve test e-postası</b></sub></p></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/setup.png" alt="İlk kurulum" /><p align="center"><sub><b>İlk kurulum sihirbazı</b></sub></p></td>
-<td><img src="docs/screenshots/admin.png" alt="Yönetim" /><p align="center"><sub><b>Yönetim – genel bakış</b></sub></p></td>
+<td><img src="docs/screenshots/panel/guvenlik-paneli.png" alt="Güvenlik paneli" /><p align="center"><sub><b>Güvenlik paneli</b> – canlı pano, el terminali veya kamerayla QR okuma</sub></p></td>
+<td><img src="docs/screenshots/details.png" alt="Ziyaret detayı" /><p align="center"><sub><b>Ziyaret detayı</b> – süreç adımları ve işlemler</sub></p></td>
 </tr>
 </table>
+
+### Yönetim paneli
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/panel/genel-bakis.png" alt="Yönetim – genel bakış" /><p align="center"><sub><b>Genel bakış</b> – sistem durumu ve yönetim araçları</sub></p></td>
+<td width="50%"><img src="docs/screenshots/panel/kullanicilar.png" alt="Kullanıcılar" /><p align="center"><sub><b>Kullanıcılar</b> – davet, roller, pasifleştirme</sub></p></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/panel/kimlik-dogrulama.png" alt="Kimlik doğrulama ve SSO" /><p align="center"><sub><b>Kimlik doğrulama</b> – SSO, ilk giriş politikası ve rol eşleme</sub></p></td>
+<td><img src="docs/screenshots/panel/e-posta.png" alt="E-posta ayarları" /><p align="center"><sub><b>E-posta</b> – SMTP, test e-postası ve güvenlik birimi bildirimleri</sub></p></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/panel/lokasyonlar.png" alt="Birimler ve lokasyonlar" /><p align="center"><sub><b>Lokasyonlar</b> – ziyaret edilebilecek bina, kat ve birimler</sub></p></td>
+<td><img src="docs/screenshots/panel/kvkk-metinleri.png" alt="KVKK aydınlatma metinleri" /><p align="center"><sub><b>KVKK metinleri</b> – değiştirilemez, sürümlü ve SHA-256 özetli</sub></p></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/panel/gorunum.png" alt="Görünüm ayarları" /><p align="center"><sub><b>Görünüm</b> – uygulama adı, kurum adı ve kurumsal renkler</sub></p></td>
+<td><img src="docs/screenshots/setup.png" alt="İlk kurulum" /><p align="center"><sub><b>İlk kurulum sihirbazı</b> – tek seferlik kodla ilk yönetici</sub></p></td>
+</tr>
+</table>
+
+### Giriş ve ziyaretçi akışı
+
+<p align="center">
+  <img src="docs/screenshots/login.png" alt="Giriş" width="100%" /><br />
+  <sub><b>Giriş ekranı</b></sub>
+</p>
 
 <p align="center">
   <img src="docs/screenshots/visitor-mobile.png" alt="Ziyaretçi akışı (mobil)" width="100%" /><br />
@@ -151,11 +174,21 @@ docker pull ghcr.io/alperenncetinn/visitflow:1.0.0
 GHCR'de paket ilk yayımlandığında **özel (private)** oluşturulur. Herkesin indirebilmesi için GitHub → Packages → visitflow → Package settings → *Change visibility → Public* yapın ve paketi bu depoya bağlayın.
 </details>
 
-### Geliştirme ortamı
+<details>
+<summary><b>Otomatik kurulum (CI / IaC)</b></summary>
 
-> Kaynak kod bu public depoda yer almaz; aşağıdaki adımlar yalnızca kaynak koda erişimi olan geliştiriciler içindir.
+İnsan etkileşimi olmayan kurulumlarda sihirbaz yerine ilk yönetici ortam değişkenleriyle oluşturulabilir. Yalnızca hiç yönetici yokken çalışır; ilk açılıştan sonra parolayı ortamdan kaldırın.
 
-Gereksinimler: .NET SDK 9 ve PostgreSQL 14+.
+```bash
+Seed__AdminEmail=admin@sirket.com
+Seed__AdminPassword=<en-az-12-karakter>
+```
+</details>
+
+<details>
+<summary><b>Kaynak koddan geliştirme (yalnızca kaynak koda erişimi olan geliştiriciler)</b></summary>
+
+Kaynak kod bu public depoda yer almaz. Gereksinimler: .NET SDK 9 ve PostgreSQL 14+.
 
 ```bash
 dotnet tool restore
@@ -171,19 +204,7 @@ Geliştirmede e-postalar gönderilmez, `src/VisitFlow.Web/App_Data/mail/*.eml` d
 VISITFLOW_TEST_PG="Host=localhost;Username=postgres;Password=postgres" dotnet test
 ```
 
-<details>
-<summary><b>Otomatik kurulum (CI / IaC)</b></summary>
-
-İnsan etkileşimi olmayan kurulumlarda sihirbaz yerine ilk yönetici ortam değişkenleriyle oluşturulabilir. Yalnızca hiç yönetici yokken çalışır; ilk açılıştan sonra parolayı ortamdan kaldırın.
-
-```bash
-Seed__AdminEmail=admin@sirket.com
-Seed__AdminPassword=<en-az-12-karakter>
-```
-</details>
-
-<details>
-<summary><b>Yeni migration</b></summary>
+Yeni migration:
 
 ```bash
 dotnet ef migrations add <Ad> --project src/VisitFlow.Infrastructure \
@@ -194,13 +215,33 @@ dotnet ef migrations add <Ad> --project src/VisitFlow.Infrastructure \
 ## 🏗 Mimari
 
 ```
-src/
-  VisitFlow.Core            Domain, seçenekler, arayüzler, saf güvenlik mantığı (bağımlılıksız)
-  VisitFlow.Infrastructure  EF Core + PostgreSQL, iş servisleri, audit, e-posta outbox, QR, imzalama
-  VisitFlow.Web             Razor Pages, kimlik sağlayıcıları, güvenlik middleware'i, SignalR
-tests/VisitFlow.Tests       Birim + gerçek PostgreSQL üzerinde uçtan uca testler
-deploy/                     PostgreSQL rol betikleri, Caddy (TLS) yapılandırması
-docs/                       Logo, afiş ve ekran görüntüleri
+                 :80 / :443
+                     │
+  ┌──────────────────▼───────────────────┐
+  │ proxy   Caddy 2 – TLS, Let's Encrypt │
+  └──────────────────┬───────────────────┘
+                     │ :8080 (iç ağ)
+  ┌──────────────────▼───────────────────┐
+  │ app     VisitFlow (ASP.NET Core 9)   │──── ./media (İSG videosu, salt okunur)
+  │         Razor Pages · SignalR        │──── app-data (imza anahtarı)
+  └──────────────────┬───────────────────┘
+                     │ DML-only rol
+  ┌──────────────────▼───────────────────┐
+  │ db      PostgreSQL 16                │──── db-data
+  └──────────────────────────────────────┘
+```
+
+Uygulama katmanları: **Core** (domain, saf güvenlik mantığı) · **Infrastructure** (EF Core + PostgreSQL, iş servisleri, audit, e-posta outbox, QR, imzalama) · **Web** (Razor Pages, kimlik sağlayıcıları, güvenlik middleware'i, SignalR).
+
+Bu depodaki dosyalar:
+
+```
+compose.yaml        Hazır imajla çalıştırma (db + app + proxy, dev profilinde Mailpit)
+.env.example        Ortam değişkenleri şablonu
+deploy/             PostgreSQL rol betikleri, Caddy (TLS) yapılandırması
+media/              İSG eğitim videosunun konacağı klasör
+docs/               Logo, afiş ve ekran görüntüleri
+Dockerfile          İmaj tarifi (yalnızca özel kaynak kodla birlikte derlenebilir)
 ```
 
 Ziyaret durumları: `Invited → Approved → CheckedIn → CheckedOut` (ayrıca `Cancelled`, `Expired`).
@@ -291,7 +332,7 @@ Auth__External__RoleMappings__SecurityGuard__0=VisitFlow.SecurityGuard
 Auth__External__AllowedEmailDomains__0=sirket.com
 ```
 
-Rolleri senkronize etme açıkken (`SyncRolesOnLogin=true`) **eşlemesi tanımlanan roller** her girişte IdP'ye göre verilir veya geri alınır; örneğin yönetici grubundan çıkarılan kişi yönetici yetkisini kaybeder. Eşlemesi boş bırakılan roller panelden yönetilir ve senkronizasyondan etkilenmez. Tamamen farklı bir kimlik sistemi için `IAuthProvider` uygulayıp `AddVisitFlowAuthentication(config, new BenimSaglayicim())` ile ekleyebilirsiniz; çekirdek koda dokunmanız gerekmez.
+Rolleri senkronize etme açıkken (`SyncRolesOnLogin=true`) **eşlemesi tanımlanan roller** her girişte IdP'ye göre verilir veya geri alınır; örneğin yönetici grubundan çıkarılan kişi yönetici yetkisini kaybeder. Eşlemesi boş bırakılan roller panelden yönetilir ve senkronizasyondan etkilenmez. Desteklenmeyen bir kimlik sistemi gerekiyorsa yeni bir `IAuthProvider` eklenebilir; bunun için ticari lisans/iletişim adresine başvurun.
 
 ## 🎨 Özelleştirme
 
@@ -300,7 +341,7 @@ Müşteriler çekirdek kodu çatallamadan yalnızca şu alanları değiştirebil
 | Alan | Nasıl |
 |---|---|
 | **ThemeConfig** | `Theme__AppName`, `Theme__OrganizationName`, `Theme__PrimaryColor`, `Theme__AccentColor`, `Theme__FooterText`, `Theme__LogoPath`, ya da **Yönetim → Görünüm** (izole `system_settings` tablosu, yalnızca beyaz listedeki anahtarlar). Renkler yalnızca `#RRGGBB` biçiminde kabul edilir. |
-| **MailTemplates** | İmajdaki `/app/MailTemplates` klasörünü (`docker compose cp app:/app/MailTemplates ./mail-templates`) bir klasöre kopyalayıp içindeki `*.html` / `*.txt` dosyalarını kopyalayıp düzenleyin ve klasörü `Mail__TemplateOverrideDirectory` ile gösterin. `{{Yer_tutucu}}` değerleri HTML'de otomatik kodlanır; konu satırı `<title>` etiketinden alınır. |
+| **MailTemplates** | İmajdaki şablonları dışarı alın (`docker compose cp app:/app/MailTemplates ./mail-templates`), `*.html` / `*.txt` dosyalarını düzenleyin, klasörü konteynere salt okunur bağlayıp `Mail__TemplateOverrideDirectory` ile gösterin. `{{Yer_tutucu}}` değerleri HTML'de otomatik kodlanır; konu satırı `<title>` etiketinden alınır. |
 | **AuthSettings** | `Auth__*` ayarları ([Kurumsal SSO](#-kurumsal-sso)). |
 | **KVKK metni** | **Yönetim → KVKK metinleri.** Yayımlanan sürümler değiştirilemez; yeni sürüm yayımlanır. Örnek metin hukuk biriminizce uyarlanmalıdır. |
 
@@ -326,11 +367,13 @@ Bu önlemler `tests/VisitFlow.Tests` altında otomatik testlerle doğrulanır: k
 <details>
 <summary><b>✅ Canlıya alma kontrol listesi</b></summary>
 
+- [ ] `.env` güçlü, rastgele parolalarla dolduruldu ve depoya eklenmedi
+- [ ] `VISITFLOW_VERSION` sabit bir sürüme ayarlı (`latest` değil); `--profile dev` (Mailpit) kullanılmıyor
 - [ ] HTTPS zorunlu (Caddy/NGINX/IIS) ve `ReverseProxy__KnownProxies` / `KnownNetworks` doğru ayarlı
 - [ ] Uygulama DML-only rolle, migration owner rolle bağlanıyor (`deploy/postgres`)
 - [ ] Kurulum sihirbazı tamamlandı ve ilk yönetici hesabı oluşturuldu
 - [ ] `DataProtection__CertificatePath` ile anahtar halkası şifreli
-- [ ] `App_Data` (imza anahtarı) kalıcı ve yedekli bir volume'de
+- [ ] `db-data` ve `app-data` volume'leri düzenli yedekleniyor
 - [ ] KVKK metni hukuk birimince onaylandı ve yayımlandı
 - [ ] İSG videosu yüklendi, `Training__DurationSeconds` gerçek süreye eşit
 - [ ] **Yönetim → E-posta** sayfasında SMTP ayarlandı ve test e-postası başarılı; SPF/DKIM/DMARC kayıtları yapılandırıldı
