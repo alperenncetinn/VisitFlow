@@ -1,0 +1,151 @@
+VisitFlow Noncommercial License
+Version 1.0
+
+Copyright (c) 2026 Alperen Çetin. All rights reserved.
+Commercial licensing contact: alperen.cetin.969@gmail.com
+
+This is a source-available license. It is NOT an open source license as defined by
+the Open Source Initiative, because it restricts commercial use.
+
+1. DEFINITIONS
+
+"Software" means the VisitFlow source code, object code, documentation and any other
+material distributed by the Licensor under this License.
+
+"Licensor" means Alperen Çetin, the sole copyright holder of the Software.
+
+"You" means the individual or legal entity exercising rights under this License.
+
+"Derivative Work" means any work based on, derived from, or incorporating the Software
+or any substantial part of it, including modified versions, forks and translations.
+
+"Internal Use" means the use of the Software by an organisation solely to operate its
+own premises and manage its own visitors, where neither the Software nor access to it
+is provided to any third party for payment or other commercial consideration.
+
+"Commercial Use" means any of the following:
+  (a) selling, licensing, sublicensing, leasing or otherwise distributing the Software
+      or any Derivative Work for a fee or other commercial consideration;
+  (b) offering the Software or any Derivative Work to third parties as a hosted,
+      managed, software-as-a-service (SaaS) or other online service for a fee, or as
+      part of a paid service, subscription, support or consulting offering;
+  (c) incorporating the Software or any Derivative Work, in whole or in part, into a
+      product or service that is sold or otherwise commercially exploited;
+  (d) any other use primarily intended for or directed toward commercial advantage or
+      monetary compensation from third parties.
+
+2. PERMITTED USE
+
+Subject to the conditions of this License, the Licensor grants You a worldwide,
+royalty-free, non-exclusive, non-transferable license to:
+  (a) use, study, review and audit the Software for personal, educational, academic
+      or research purposes;
+  (b) use the Software for Internal Use;
+  (c) copy, modify and fork the Software and create Derivative Works; and
+  (d) distribute the Software and Derivative Works free of charge, provided that the
+      recipient receives them under this same License.
+
+3. PROHIBITED USE
+
+Any Commercial Use of the Software or of any Derivative Work is strictly prohibited
+without a separate, prior written commercial license from the Licensor. No rights are
+granted by this License for Commercial Use.
+
+4. COMMERCIAL LICENSING
+
+The Licensor is the only party entitled to grant commercial rights to the Software.
+Requests for written permission or a commercial license must be sent to:
+
+    Alperen Çetin
+    alperen.cetin.969@gmail.com
+
+5. CONDITIONS
+
+  (a) You must retain this License, the above copyright notice and all attribution
+      notices in every copy or substantial portion of the Software and of any
+      Derivative Work.
+  (b) Modified files must carry a prominent notice stating that You changed them.
+  (c) You may not remove, obscure or alter any license, copyright or attribution
+      notice, nor misrepresent the origin of the Software.
+  (d) The name "VisitFlow" and the Licensor's name may not be used to endorse or
+      promote products derived from the Software without prior written permission.
+
+6. THIRD-PARTY COMPONENTS
+
+The Software includes or depends on third-party components that are licensed under
+their own terms (see THIRD-PARTY-NOTICES.md). This License does not modify those terms.
+
+7. TERMINATION
+
+Any breach of this License automatically terminates the rights granted to You. If
+You cure the breach within thirty (30) days after first becoming aware of it, and it
+is Your first breach, Your rights are reinstated. Termination does not affect the
+Licensor's right to seek any remedy available at law.
+
+8. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, NON-INFRINGEMENT AND SECURITY. YOU ARE SOLELY RESPONSIBLE FOR THE
+LAWFUL OPERATION OF THE SOFTWARE, INCLUDING COMPLIANCE WITH DATA PROTECTION LAWS
+(SUCH AS KVKK AND GDPR) AND OCCUPATIONAL HEALTH AND SAFETY REGULATIONS.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE LICENSOR BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+10. GOVERNING LAW
+
+This License is governed by the laws of the Republic of Türkiye. The courts and
+enforcement offices of İstanbul shall have jurisdiction over any dispute arising
+from this License.
+
+11. TRANSLATION
+
+A Turkish translation follows for convenience. In case of any conflict, the English
+text prevails.
+
+--------------------------------------------------------------------------------
+
+VisitFlow Ticari Olmayan Kullanım Lisansı – Sürüm 1.0 (Türkçe çeviri)
+
+Telif Hakkı (c) 2026 Alperen Çetin. Tüm hakları saklıdır.
+Ticari lisans irtibat adresi: alperen.cetin.969@gmail.com
+
+Bu lisans "kaynağı açık" (source-available) bir lisanstır; ticari kullanımı
+kısıtladığı için Open Source Initiative tanımına göre açık kaynak lisansı DEĞİLDİR.
+
+1. Serbest kullanım: Yazılım; kişisel, eğitim, akademik ve araştırma amaçlarıyla
+   kullanılabilir, incelenebilir ve denetlenebilir. Bir kurum, yazılımı yalnızca kendi
+   tesislerini işletmek ve kendi ziyaretçilerini yönetmek için, yazılımı veya ona
+   erişimi üçüncü kişilere ücret ya da başka bir ticari karşılık ile sunmaksızın
+   kurum içinde kullanabilir. Yazılım kopyalanabilir, değiştirilebilir, çatallanabilir
+   (fork) ve aynı lisans altında ücretsiz olarak dağıtılabilir.
+
+2. Yasak kullanım: Yazılımın veya ondan türetilen herhangi bir yazılımın;
+   (a) ücret veya ticari karşılık ile satılması, lisanslanması, kiralanması ya da
+       dağıtılması,
+   (b) üçüncü kişilere ücret karşılığı barındırılan / yönetilen hizmet veya SaaS
+       olarak sunulması ya da ücretli bir hizmetin, aboneliğin, destek veya danışmanlık
+       paketinin parçası yapılması,
+   (c) satılan veya ticari olarak işletilen bir ürünün ya da hizmetin parçası haline
+       getirilmesi,
+   (d) esas olarak üçüncü kişilerden ticari kazanç sağlamaya yönelik başka herhangi bir
+       şekilde kullanılması
+   Lisans Verenin önceden verdiği yazılı ticari lisans olmaksızın KESİNLİKLE YASAKTIR.
+
+3. Ticari haklar: Ticari kullanım ve satış hakları için tek yetkili telif hakkı sahibi
+   Alperen Çetin'dir. Yazılı izin ve ticari lisans talepleri
+   alperen.cetin.969@gmail.com adresine iletilmelidir.
+
+4. Koşullar: Bu lisans metni ve telif hakkı bildirimi tüm kopyalarda ve türev
+   çalışmalarda korunmalı; değiştirilen dosyalarda değişiklik yapıldığı belirtilmeli;
+   "VisitFlow" adı ve Lisans Verenin adı yazılı izin olmadan türev ürünlerin
+   tanıtımında kullanılmamalıdır.
+
+5. Fesih, garanti reddi, sorumluluğun sınırlandırılması ve uygulanacak hukuk için
+   yukarıdaki İngilizce metnin 7–10. maddeleri geçerlidir. Uyuşmazlıklarda Türkiye
+   Cumhuriyeti hukuku uygulanır; İstanbul mahkemeleri ve icra daireleri yetkilidir.

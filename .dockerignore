@@ -1,0 +1,30 @@
+# Only what the Dockerfile COPYs is needed: global.json, Directory.*.props, src/, LICENSE, THIRD-PARTY-NOTICES.md
+**/bin
+**/obj
+**/App_Data
+**/TestResults
+**/.vs
+**/.idea
+**/.vscode
+**/*.user
+**/.DS_Store
+.git
+.github
+.config
+.env
+.env.*
+**/*.pem
+**/*.pfx
+**/*.key
+**/*.p12
+media
+tests
+docs
+deploy
+in-app-photos
+*.md
+!THIRD-PARTY-NOTICES.md
+docker-compose.yml
+compose.yaml
+# Training videos are customer content: mount them at runtime (/app/wwwroot/media), never bake them into the image
+**/wwwroot/media/*.mp4

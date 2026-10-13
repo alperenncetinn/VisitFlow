@@ -1,0 +1,109 @@
+# ============================================================================================
+# PUBLIC DAĞITIM DEPOSU — İZİN LİSTESİ (WHITELIST)
+# Varsayılan olarak HER ŞEY yok sayılır; yalnızca aşağıda "!" ile açılan dağıtım dosyaları izlenir.
+# Kaynak kod (src/, tests/, *.sln, *.csproj, *.cs ...) yalnızca yerel Docker build bağlamında kalır.
+# Not: .gitignore daha önce izlenmiş dosyaları gizlemez. Push'tan önce daima `git ls-files` kontrol edin.
+# ============================================================================================
+
+/*
+
+!/.gitignore
+!/.dockerignore
+!/Dockerfile
+!/compose.yaml
+!/.env.example
+!/README.md
+!/LICENSE
+!/THIRD-PARTY-NOTICES.md
+!/SECURITY.md
+
+# compose.yaml'ın bağladığı yapılandırma dosyaları
+!/deploy/
+/deploy/**
+!/deploy/*/
+!/deploy/caddy/Caddyfile
+!/deploy/postgres/01-roles.sh
+!/deploy/postgres/least-privilege.sql
+
+# İSG videosu klasörü: yalnızca açıklama dosyası (video müşteri içeriğidir)
+!/media/
+/media/*
+!/media/README.md
+
+# README görselleri (logo/afiş kaynak dosyaları hariç)
+!/docs/
+/docs/*
+!/docs/assets/
+/docs/assets/*
+!/docs/assets/visitflow-logo.png
+!/docs/assets/visitflow-banner.jpg
+!/docs/screenshots/
+
+# ============================================================================================
+# İKİNCİ KATMAN — yukarıdaki izinlerden sonra gelir ve onları geçersiz kılar.
+# İzin listesine yanlışlıkla bir klasör eklense bile kaynak kod, derleme çıktısı ve gizli bilgiler izlenmez.
+# ============================================================================================
+
+# Kaynak kod ve proje dosyaları
+src/
+tests/
+*.cs
+*.csx
+*.cshtml
+*.razor
+*.csproj
+*.fsproj
+*.vbproj
+*.sln
+*.slnx
+*.props
+*.targets
+global.json
+nuget.config
+NuGet.Config
+appsettings*.json
+launchSettings.json
+*.resx
+
+# Derleme çıktıları ve IDE dosyaları
+bin/
+obj/
+publish/
+out/
+TestResults/
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.swp
+.DS_Store
+
+# Çalışma zamanı durumu, gizli bilgiler, sertifikalar ve anahtarlar
+.env
+.env.*
+!/.env.example
+App_Data/
+*.pem
+*.pfx
+*.p12
+*.key
+*.crt
+*.cer
+*.snk
+*.jks
+secrets.json
+*.secrets
+id_rsa*
+id_ed25519*
+
+# Medya ve arşivler
+*.mp4
+*.mov
+*.zip
+*.tar
+*.tar.gz
+*.dll
+*.exe
+*.pdb
+*.nupkg
